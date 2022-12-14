@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "Light";
+  src: url("../fonts/Montserrat-Light.ttf");
+}
+@font-face {
+  font-family: "ExtraLight";
+  src: url("../fonts/Montserrat-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "Thin";
+  src: url("../fonts/Montserrat-Thin.ttf");
+}
+@media screen and (max-width: 1350px) {
+  #imagesA {
+    width: 100%;
+  }
+  #imagesA img {
+    width: 100% !important;
+  }
+  #imagesA img:first-child {
+    display: none;
+  }
+  #theRestaurant {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #navigation {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+  }
+  #navigation #logo {
+    width: 30%;
+  }
+  #navigation #logo img {
+    height: 100%;
+  }
+  #navigation #menu {
+    width: 50%;
+    display: relative;
+    text-align: end;
+  }
+  #navigation #menu ul {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    display: none;
+    background-color: #f0f0f0;
+    width: 150px;
+  }
+  #navigation #menu ul li {
+    height: unset !important;
+    width: 100% !important;
+  }
+  #navigation #hamburger {
+    display: block !important;
+    font-size: 35px;
+  }
+  #navigation #mainMenu {
+    font-family: "Light";
+    width: 40%;
+    background-color: #f1e9e3;
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    padding: 9px;
+    padding-left: unset;
+  }
+  #navigation #mainMenu li {
+    margin-top: 9px;
+    opacity: 0.6;
+  }
+  #more {
+    position: relative;
+    margin-left: unset;
+    text-align: end;
+    min-height: auto !important;
+  }
+  #more span {
+    margin: auto;
+  }
+  #more ul {
+    top: 20px;
+    padding-top: 0px;
+    padding-right: 13px;
+    padding-bottom: 3px;
+    flex-direction: column;
+    display: none;
+    background-color: rgb(225, 202, 184);
+  }
+}
+@media screen and (min-width: 801px) {
+  #mainMenu {
+    display: flex !important;
+  }
+  #more > ul {
+    border-radius: 0px 0px 15px 15px;
+    padding: 9px;
+  }
+  #more > ul > li {
+    margin-top: 9px;
+  }
+  #more > ul > li li {
+    margin-top: 3px;
+  }
+}
+@media screen and (min-width: 500px) {
+  #aboutImages {
+    width: 100%;
+    height: 65%;
+    flex-direction: row;
+  }
+  #aboutImages img {
+    width: 40%;
+    height: unset;
+  }
+  #aboutImages #introImage2 {
+    display: unset;
+  }
+  #clubContent .content {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 770px) {
+  form {
+    margin-top: 50px;
+  }
+  .row > .column {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: start;
+    height: 100px;
+  }
+  .column {
+    flex-direction: column;
+    width: 25%;
+    margin-bottom: 10px;
+    justify-content: start;
+  }
+  .column input, .column select {
+    height: 40px;
+  }
+  select {
+    max-height: 50px;
+  }
+}
+@media screen and (min-width: 650px) {
+  #gallery img {
+    width: 100%;
+  }
+  #clubContent .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+  #clubContent .content > div {
+    width: 27%;
+  }
+}
+@media screen and (min-width: 750px) {
+  #about .content {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #aboutImages {
+    height: auto;
+    align-items: center;
+    width: 40%;
+  }
+  #aboutImages img {
+    width: 100%;
+  }
+  #aboutImages #introImage1 {
+    display: none;
+  }
+  #aboutText {
+    width: 40%;
+    display: none;
+    margin: auto;
+  }
+  #aboutText p {
+    text-align: start;
+  }
+  #aboutIntro {
+    width: 40%;
+    margin-top: 0px;
+    text-align: start;
+  }
+  #aboutIntro p {
+    margin: 15px 0px;
+  }
+  #aboutIntro input {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #about, #bookaTable, #gallery {
+    min-height: 100%;
+  }
+  .about {
+    min-height: 380px;
+  }
+  #aboutImages {
+    width: 70%;
+    align-items: start;
+  }
+  #aboutImages img {
+    width: 40%;
+  }
+  #aboutImages #introImage1 {
+    display: unset;
+  }
+  #aboutText {
+    width: 70%;
+  }
+  #aboutText p {
+    padding: 50px;
+    padding-right: 80px;
+  }
+  #club {
+    min-height: 60%;
+  }
+  form {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 850px) {
+  #food > ul, #cocktails > ul, #wine > ul {
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  #food > ul li, #cocktails > ul li, #wine > ul li {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 610px) {
+  .meniButton {
+    width: 50%;
+    margin-top: 10px;
+  }
+  #food > ul h3, #cocktails > ul h3, #wine > ul h3 {
+    font-size: 1rem !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #aboutAuthor {
+    flex-direction: column;
+  }
+  #text {
+    text-align: center;
+    width: 90% !important;
+    margin-top: 10px;
+  }
+  #text p {
+    margin-bottom: 10px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  #mainMenu {
+    background-color: #f0f0f0;
+  }
+}/*# sourceMappingURL=media.css.map */

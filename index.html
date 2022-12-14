@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logomini.png"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/style.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/style/media.css" type="text/css">
+    <title>Restaurant the Пијаца</title>
+    <meta name="keywords" content="Pijaca, restaurant, tastes, menu, food"/>
+    <meta name="description" content="Plato restaurant is a place where unusual tastes are co
+    mbined and converted into perfect meals. Our menu consists of carefully selected ingredients that make our food amazing."/> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="navigation">
+        <div id="logo">
+            <a href="#">
+                <figure><img src="assets/images/logo.png" alt="Restaurant logo"></figure>
+            </a>
+        </div>
+        <div id="menu">
+                <span id="hamburger"><i class="fas fa-bars"></i></span>
+            <ul id="mainMenu">
+                <li><a href="#">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#menuFood">menu</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#club">vip club</a></li>
+                <li><a href="#bookaTable">book a table</a></li>
+                <li id="more"><span id="moreS">more</span>
+                    <ul id="moreU">
+                        <li id="social">social
+                            <ul id="socialU">
+                                <li><a href="https://www.facebook.com/thepijaca" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/thepijaca" target="_blank"><i class="fab fa-instagram"></i><a><li>
+                                <li><a href= "https://www.tripadvisor.com/Restaurant_Review-g294472-d15717996-Reviews-The_Pijaca-Belgrade.html" target="_blank"><i class="fab fa-tripadvisor"></i></a></li>
+                            </ul>
+                        </li>
+                        <li id="documents">
+                            <span>docs</span>
+                            <ul id="documentsU">
+                                <li><a href="assets/style/style.scss" target="_blank"><i class="fab fa-sass"></i></a></li>
+                                <li><a href="assets/style/media.scss" target="_blank"><i class="fas fa-mobile-alt"></i></a></li>
+                                <li><a href="sitemap.xml" target="_blank"><i class="fas fa-sitemap"></i></a></li>
+                                <li><a href="assets/js/main.js" target="_blank"><i class="fab fa-js-square"></i></a></li>
+                                <li><a href="assets/js/jquery.js" target="_blank"><i class="fab fa-js-square"></i></a></li>
+                                <li><a href="documentation.txt"><small>documentation</small></a></li>
+                            </ul>
+                        </li>
+                        <li onClick="document.getElementById('author').scrollIntoView();">author</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main" id="intro">
+        <div class="content">
+            <h1>Welcome to the Pijaca restaurant</h1>
+            <h2>An imaginative compilation of Italian cuisine and the tastiest stories from all over the world</h2>
+            <input id="button" type="button" onClick="document.getElementById('bookaTable').scrollIntoView();" value="BOOK A TABLE">
+        </div>
+    </div>
+    <div class="main" id="about">
+        <div class="content">
+            <div class="about" id="aboutImages">
+                <img src="assets/images/img_1.jpg" alt="Intro1" id="introImage1"/>
+                <img src="assets/images/img_6.jpg" alt="Intro2" id="introImage2">
+            </div>
+            <div class="about" id="aboutText">
+           
+                <p>Lociran pored Cvetkove pijace, stare preko 80 godina, u modernoj aveniji i najdužoj ulici u Beogradu -bulevaru kralja Aleksandra, restoran The Пијаца, pružaće vam najlepši doživljaj u konzumiranju originalne italijanske i hrane iz svih delova sveta, pripremljene od najsvežijih i najkvalitetnijih namirnica a sa puno ljubavi i strasti. Strastvenost u pripremi svakog jela pretočiće se u pravu ljubav serviranu na tanjiru, u kojoj ćete uživati bez žurbe, sa društvom koje vi odaberete.</p>
+            </div>
+            <div id="aboutIntro">
+                <h3>The Restaurant</h3>
+                <p>Located next to Cvetkova Pijaca, which is over 80 years old, in a modern avenue and the longest street in Belgrade - Kralja Aleksandra Boulevard, The Pijaca restaurant will offer you the best experience in consuming original Italian and food from all parts of the world, prepared from the freshest and highest quality ingredients and with lots of love and passion.</p>
+            <input type="button" value="READ MORE" id="aboutMore" class="darkButton" onClick="addAbout()">
+            </div>
+        </div>
+    </div>
+    <div class="main" id="banner">
+        <div class="content">
+            <h3>DIVERSE OFFER FOR EVERYONE TASTE</h3>
+            <p>Maštovita kompilacija italijanske kuhinje i najukusnijih priča iz svih delova sveta.</p>
+        </div>
+    </div>
+    <div class="main" id="menuFood">
+        <div class="content">
+            <h3>menu</h3>
+            <div>
+            <input type="button" class="darkButton" class="meniButton"  id="foodB" value="FOOD" >
+            <input type="button" class="darkButton" class="meniButton"  id="wineB" value="WINE" >
+            <input type="button" class="darkButton" class="meniButton"  id="cocktailB" value="COCKTAILS" >
+            </div>
+            <div>
+                <div id="food"></div>
+                <div id="wine"></div>
+                <div id="cocktails"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main" id="gallery">
+        <div class="content">
+            <h3>Gallery</h3>
+            <div>
+                <div>
+                    <a href="javascript:Previous()"><h3><i class="fas fa-chevron-left"></i></h3></a>
+                </div>
+                <div id="galleryImage">
+                    <img src="assets/images/gallery/meat.jpg" alt="gallery" name="slika" id="slika">
+                </div>
+                <div>
+                    <a href="javascript:Next()"><h3><i class="fas fa-chevron-right"></i></h3></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="club">
+        <div class="content">
+            <h1>VIP CLUB</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla magni, voluptates, non, dicta ut hic dolor ipsum repellendus libero dolore deserunt quibusdam at soluta voluptate sint nobis? Qui, exercitationem laboriosam.
+            Incidunt reiciendis, nostrum pariatur dolorem assumenda iste rem odio nihil aliquid veritatis vel repudiandae perspiciatis, nam harum qui quae inventore obcaecati quo corporis voluptatum dolores! Optio consectetur voluptatem in totam?</p>
+            <input type="button" value="READ MORE" id="buttonClub">
+        </div>
+    </div>
+    <div class="main" id="clubContent">
+        <div class="content">
+            <div>
+                <div>
+                    <img src="assets/images/vc01.jpg" alt="VIPz1" class="clubImg" id="A">
+                </div>
+                <div id="AA">
+                    <h4>Novo mesto za opustanje</h4>
+                    <p>info:+381 64 128 75 76</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="assets/images/vc02.jpg" alt="VIPz2" class="clubImg" id="B">
+                </div>
+                <div id="BB">
+                    <h4>Novo mesto za opustanje</h4>
+                    <p>info:+381 64 128 75 76</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="assets/images/vc03.jpg" alt="VIPz3" class="clubImg" id="C">
+                </div>
+                <div id="CC">
+                    <h4>Novo mesto za opustanje</h4>
+                    <p>info:+381 64 128 75 76</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main" id="bookaTable">
+        <div class="content">
+            <h3>Book a table</h3>
+            <h4>We accept reservations only for lunch and dinner</h4>
+
+            <form action="#" method="get">
+                <div>
+                    <div>
+                        <label for="name">Name <span>*</span></label>
+                        <input type="text" id="name" name="name" placeholder="ex: Peter Johnson">
+                    </div>
+                    <div>
+                        <label for="emailAdd">Email address</label>
+                        <input type="text" id="emailAdd" name="emailAdd">
+                    </div>
+                    <div>
+                        <label for="mobilni">Phone number <span>*</span></label>
+                        <input type="text" id="mobilni" name="mobilni" placeholder="format 06xxxxxxxxx">
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="date">Date <span>*</span></label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div id="time">
+                        <label for="time">Time <span>*</span></label>
+                    </div>
+                    <div id="people">
+                        <label for="people">People <span>*</span></label>
+                    </div>
+                </div>
+                <div>
+                    <input type="button" value="RESERVE" class="darkButton" id="btnReserve"/>
+                   
+                </div>
+                <div>
+                    <p> * - required field</p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="main" id="author">
+        <div class="content">
+            <h3>Author</h3>
+            <div id="aboutAuthor">
+                <div>
+                    <img src="assets/images/author.jpg" alt="author">
+                </div>
+                <div id="text">
+                    <p>Radomir Vranić 266/18</p><br/>
+                    <p>Internet tehnologije / Administriranje računarskih mreža</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.js" type="text/javascript"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+</body>
+</html>
